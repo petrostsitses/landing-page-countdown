@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="el">
+<head>
+  <meta charset="UTF-8">
+  
+  <title>Σελίδα Υπό Κατασκευή</title>
+  
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</head>
+
+<body>
+
+  <!-- Βίντεο φόντου -->
+  <video id="video-background" autoplay muted loop>
+    <source src="video/856309-hd_1920_1080_30fps.mp4" type="video/mp4">
+
+  </video>
+
+
+  <!-- Περιεχόμενο πάνω από το βίντεο -->
+  <div class="content">
+    <h1>Η σελίδα μας είναι υπό κατασκευή</h1>
+    
+    <!-- Countdown -->
+    <div id="countdown"></div>
+ 
+ <!-- Κουμπιά -->
+ <div class="buttons">
+  <button id="subscribeBtn">Subscribe Now</button>
+  <button id="contactBtn">Contact Us</button>
+</div>
+ 
+ <!-- Subscribe Modal -->
+ <div id="subscribeModal" class="modal">
+  <div class="modal-content">
+    <span class="close" id="closeSubscribe">&times;</span>
+    <h2>Εγγραφή</h2>
+    
+  </div>
+
+
+  <iframe width="540" height="305" src="https://sibforms.com/serve/MUIFAI-ZKpQVWkvycMKziIey1Aiv8-562MCuEthCn7Qbe-vR6K-j7FMOfPMr_ayhWTEHCfceq_3ZmOhwbNlNm26lqR3QRtOi2Li_D8PM22tmWDQSc165b1ZxYjhQ9IvhH_Z9Hi50oZHTPk_KJn0iIiR9rJM0mb1r44eVCric4eeGuMQcUeul-aRksxxbO2OkmbVJbbNM-JPlqNtn" frameborder="0" scrolling="auto" allowfullscreen style="display: block;margin-left: auto;margin-right: auto;max-width: 100%;"></iframe>
+
+
+
+</div>
+
+
+
+
+
+<!-- Contact Modal -->
+<div id="contactModal" class="modal">
+  <div class="modal-content large-modal">
+    <span class="close" id="closeContact">&times;</span>
+    
+    <h2>Φόρμα Επικοινωνίας</h2>
+   
+    <div id="form-message"></div>
+    <form id="contactForm">
+      <div class="form-row">
+        
+        <div class="column">
+          
+          <label>ΟΝΟΜΑ</label>
+          <input type="text" id="A1">
+          <span class="error"></span>
+          <span class="success"></span>
+        
+
+          <label>ΕΠΩΝΥΜΟ</label>
+          <input type="text" id="A2">
+          <span class="error"></span>
+          <span class="success"></span>
+
+          <label>ΟΔΟΣ</label>
+          <input type="text" id="A3">
+          <span class="error"></span>
+          <span class="success"></span>
+
+          <label>ΑΡΙΘΜΟΣ</label>
+          <input type="text" id="A4"><span class="error"></span>
+          <span class="success"></span>
+
+          <label>ΠΟΛΗ</label>
+          <input type="text" id="A5"><span class="error"></span>
+          <span class="success"></span>
+
+          <label>ΠΕΡΙΟΧΗ</label>
+          <input type="text" id="A6"><span class="error"></span>
+          <span class="success"></span>
+
+          <label>ΟΙΚ. ΚΑΤΑΣΤΑΣΗ</label>
+          <select id="A7">
+            <option value="">-- Επιλογή --</option>
+            <option value="Άγαμος">Άγαμος</option>
+            <option value="Έγγαμος">Έγγαμος</option>
+          </select><span class="error"></span>
+          <span class="success"></span>
+          
+
+          
+
+          <div id="a9-wrapper" style="display:none;">
+            <label>ΑΡΙΘΜΟΣ ΤΕΚΝΩΝ</label>
+            <input type="text" id="A9"><span class="error"></span>
+            <span class="success"></span>
+            
+          </div>
+        </div>
+
+        <div class="column">
+          <label>ΧΡΟΝΟΛΟΓΙΑ ΓΕΝΝΗΣΗΣ</label>
+          <input type="date" id="A10"><span class="error"></span>
+          <span class="success"></span>
+          
+          <label>ΦΥΛΟ</label>
+          <select id="A11">
+            <option value="">-- Επιλογή --</option>
+            <option value="ΑΝΔΡΑΣ">ΑΝΔΡΑΣ</option>
+            <option value="ΓΥΝΑΙΚΑ">ΓΥΝΑΙΚΑ</option>
+          </select><span class="error"></span>
+          <span class="success"></span>
+          
+
+          <div id="military-wrapper" style="display:none;">
+            <label>ΣΤΡ. ΥΠΟΧΡΕΩΣΕΙΣ</label>
+            <select id="A12">
+              <option value="">-- Επιλογή --</option>
+              <option value="Ναι">Εκπληρωμένες</option>
+              <option value="Όχι">Όχι</option>
+            </select>
+            <span class="error"></span>
+            <span class="success"></span>
+          
+
+            <label>ΕΤΟΣ ΑΠΟΛ. ΣΤΡΑΤΟΥ</label>
+            <input type="date" id="A13">
+            <span class="error"></span>
+            <span class="success"></span>
+          </div>
+
+          <label>
+            <input type="checkbox" id="A14"> ΠΙΣΤΩΤΙΚΕΣ ΚΑΡΤΕΣ
+          </label><br>
+
+          <label>
+            <input type="checkbox" id="A15"> ΔΑΝΕΙΟ
+          </label><br>
+
+          <label>ΑΠΟΦΟΙΤΟΣ</label>
+          <select id="A16">
+            <option value="">-- Επιλογή --</option>
+            <option value="Γυμνάσιο">Γυμνάσιο</option>
+            <option value="Λύκειο">Λύκειο</option>
+            <option value="ΤΕΙ">ΤΕΙ</option>
+            <option value="ΑΕΙ">ΑΕΙ</option>
+          </select><span class="error"></span>
+          <span class="success"></span>
+          
+
+          <button type="submit" class="modal-button">ΑΠΟΣΤΟΛΗ</button>
+        </div>
+      </div>
+    </form>
+  </div>
+</div>
+
+
+
+
+<!-- Social media buttons -->
+<div class="social-buttons">
+  <a href="https://www.datalabs.edu.gr/" class="social-btn facebook" target="_blank" title="Facebook">
+    <i class="fab fa-facebook-f"></i>
+  </a>
+  <a href="https://x.com/" class="social-btn twitter" target="_blank" title="Twitter">
+    <i class="fab fa-twitter"></i>
+  </a>
+  <a href="https://www.instagram.com/datalabs_thessaloniki/" class="social-btn instagram" target="_blank" title="Instagram">
+    <i class="fab fa-instagram"></i>
+  </a>
+  <a href="mailto:youremail@example.com" class="social-btn email" title="Email">
+    <i class="fas fa-envelope"></i>
+  </a>
+</div>
+
+
+
+
+
+
+ 
+ 
+
+ 
+  
+
+
+
+  <script src="script.js"></script>
+</body>
+</html>
